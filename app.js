@@ -85,6 +85,7 @@ function respondSSE(req, res) {
     chatEmitter.off('message', onMessage);
   });
 }
+}
 
 app.get('/', chatApp);
 app.get('/json', respondJson);
